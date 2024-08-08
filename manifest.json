@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Synology Magnet Downloader",
+  "version": "1.0",
+  "description": "Send magnet links to Synology Download Station",
+  "permissions": [
+    "clipboardRead",
+    "activeTab",
+    "storage",
+    "contextMenus",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://example.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/icon16.png",
+      "48": "/images/icon48.png",
+      "128": "/images/icon128.png"
+    }
+  },
+  "options_page": "options.html"
+}
